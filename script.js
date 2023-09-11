@@ -8,7 +8,7 @@ arr.forEach(word=>{
 	obj[newWord]=word;
 	newArr.push(newWord);
 });
-newArr.sort();
+newArr.reverse();
 let ans=[];
 for(let i of newArr){
 	ans.push(obj[i]);
