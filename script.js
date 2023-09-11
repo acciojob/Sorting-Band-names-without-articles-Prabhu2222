@@ -3,7 +3,7 @@ let arr = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
 let newArr=[];
 let obj={};
 arr.forEach(word=>{
-	let regexp=/\b(the|an|a)\b/g;
+	let regexp=/\b(the|an|a)\b/gi;
 	let newWord=word.replace(regexp,"");
 	obj[newWord]=word;
 	newArr.push(newWord);
